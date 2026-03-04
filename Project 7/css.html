@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: darkblue;
+            border-bottom: 2px solid lightgray;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        My CSS Project
+    </header>
+
+    <div class="container">
+        <h2>About This Project</h2>
+        <p>
+            This webpage is created using <span class="highlight">HTML and CSS</span>.
+            It shows different CSS properties and values.
+        </p>
+
+        <h2>Features Used</h2>
+        <p>
+            Background gradient, padding, margin, border-radius,
+            box-shadow, hover effect and more!
+        </p>
+
+        <button onclick="window.location.href='aboutcss.html'">Learn More (actually click it)</button>
+    </div>
+
+    <footer>
+        Created by Aarav | 2026
+    </footer>
+
+</body>
+</html>
