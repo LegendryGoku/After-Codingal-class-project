@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Cascading Animation Demo</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        text-align: center;
+        padding: 100px;
+    }
+
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+}
+
+/* Body Style */
+body{
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    text-align:center;
+    padding:40px;
+}
+
+/* Element Selector */
+h1{
+    color: darkblue;
+    margin-bottom:30px;
+}
+
+/* Class Selector */
+.card{
+    background:white;
+    width:300px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 5px 10px gray;
+    transition:0.4s;
+}
+
+/* Hover Effect */
+.card:hover{
+    transform: scale(1.1);
+    background-color: lightyellow;
+}
+
+/* ID Selector */
+#special{
+    color:red;
+    font-weight:bold;
+}
+
+/* Button Style */
+button{
+    background-color:blue;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Button Hover */
+button:hover{
+    background-color:green;
+}
+
+/* Animation Box */
+.animation-box{
+    width:100px;
+    height:100px;
+    background-color:orange;
+    text-align: center;
+    margin:40px auto;
+    border-radius:10px;
+    animation: moveBox 3s infinite alternate;
+}
+
+/* Keyframes Animation */
+@keyframes moveBox{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(200px);
+        color: white;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 style="color:purple;">CSS Cascading Effects with Animation</h1>
+
+<div class="card">
+<p>This card uses element and class selectors.</p>
+</div>
+
+<div class="card">
+<p id="special">This card uses the ID selector.</p>
+</div>
+
+<div class="card">
+<p>Hover on this card!</p>
+<button>Click Me</button>
+</div>
+
+<div class="animation-box">Animation of a box</div>
+
+</body>
+</html>
