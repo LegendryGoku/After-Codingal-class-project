@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced CSS with Animation</title>
+
+<style>
+
+/* Universal Selector */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Animation */
+body{
+  height:100vh;
+  background: linear-gradient(-45deg,#ff9a9e,#fad0c4,#84fab0,#8fd3f4);
+  background-size:400% 400%;
+  animation: bgmove 8s infinite alternate;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Animation */
+@keyframes bgmove{
+  0%{background-position:left;}
+  100%{background-position:right;}
+}
+
+/* Container */
+.container{
+  background:white;
+  padding:30px;
+  width:60%;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+/* Advanced Selector */
+.container p{
+  margin:10px 0;
+  color:#333;
+}
+
+/* Pseudo Element */
+.container p::first-letter{
+  font-size:35px;
+  color:#ff4d4d;
+  font-weight:bold;
+}
+
+/* Pseudo Element */
+.container p::before{
+  content:"👉 ";
+}
+
+/* List */
+ul > li{
+  padding:10px;
+  transition:0.3s;
+}
+
+/* Pseudo Class Hover */
+li:hover{
+  background:#4facfe;
+  color:white;
+  border-radius:5px;
+}
+
+/* Attribute Selector */
+input[type="text"]{
+  padding:10px;
+  border:2px solid #4facfe;
+  border-radius:5px;
+  width:200px;
+}
+
+/* Focus Pseudo Class */
+input:focus{
+  border-color:#ff4d4d;
+  outline:none;
+}
+
+/* Button */
+button{
+  padding:10px 20px;
+  border:none;
+  background:#4facfe;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* Hover Effect */
+button:hover{
+  background:#ff4d4d;
+  transform:scale(1.1);
+}
+
+/* Link */
+a{
+  text-decoration:none;
+  color:#4facfe;
+}
+
+/* Pseudo Class */
+a:hover{
+  color:#ff4d4d;
+  font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Advanced CSS</h1>
+
+<p>This example shows pseudo elements.</p>
+<p>Hover over items to see pseudo classes.</p>
+
+<h3>Web Technologies</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+
+<br>
+
+<label>Enter Your Name</label><br><br>
+<input type="text" placeholder="Type here">
+
+<br><br>
+
+<button>Submit</button>
+
+<br><br>
+
+<a href="#">Hover over this link</a>
+
+</div>
+
+</body>
+</html>
